@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voyago - Travel Booking</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <i class="fas fa-plane"></i>
+                    Voyago
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Deals</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <button class="login">Login</button>
+                    <button class="signup">Sign Up</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Discover Your Perfect Getaway</h1>
+            <p>Explore the world's most beautiful destinations with our curated travel experiences. Find deals, book flights, and create unforgettable memories.</p>
+            
+            <!-- Search Box -->
+            <div class="search-box slide-up">
+                <div class="search-tabs">
+                    <div class="search-tab active">Flights</div>
+                    <div class="search-tab">Hotels</div>
+                    <div class="search-tab">Packages</div>
+                    <div class="search-tab">Activities</div>
+                </div>
+                <form class="search-form">
+                    <div class="form-group">
+                        <label for="destination">Destination</label>
+                        <input type="text" id="destination" class="form-control" placeholder="Where to?">
+                    </div>
+                    <div class="form-group">
+                        <label for="departure">Departure</label>
+                        <input type="text" id="departure" class="form-control datepicker" placeholder="Select date">
+                    </div>
+                    <div class="form-group">
+                        <label for="return">Return</label>
+                        <input type="text" id="return" class="form-control datepicker" placeholder="Select date">
+                    </div>
+                    <div class="form-group">
+                        <label for="travelers">Travelers</label>
+                        <select id="travelers" class="form-control">
+                            <option value="1">1 Traveler</option>
+                            <option value="2">2 Travelers</option>
+                            <option value="3">3 Travelers</option>
+                            <option value="4">4 Travelers</option>
+                            <option value="5">5+ Travelers</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="search-button">Search <i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Destinations -->
+    <section class="container">
+        <div class="section-title">
+            <h2>Popular Destinations</h2>
+        </div>
+        <div class="destinations">
+            <!-- Card 1 -->
+            <div class="destination-card fade-in" style="animation-delay: 0.1s;">
+                <div class="card-image">
+                    <img src="./IMAGES/Bali, Indonesia.jpeg" alt="Bali">
+                    <div class="card-badge">Popular</div>
+                </div>
+                <div class="card-content">
+                    <h3>Bali, Indonesia</h3>
+                    <p>Known for its volcanic mountains, iconic rice paddies, beaches and coral reefs.</p>
+                    <div class="card-meta">
+                        <div class="price">Rs.254,993 Only</div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(128)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="destination-card fade-in" style="animation-delay: 0.2s;">
+                <div class="card-image">
+                    <img src="./IMAGES/Paris, France.jpeg" alt="Paris">
+                    <div class="card-badge">Trending</div>
+                </div>
+                <div class="card-content">
+                    <h3>Paris, France</h3>
+                    <p>The City of Light, famous for its cafe culture, the Eiffel Tower and the Louvre.</p>
+                    <div class="card-meta">
+                        <div class="price">Rs.425,187 Only</div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(256)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="destination-card fade-in" style="animation-delay: 0.3s;">
+                <div class="card-image">
+                    <img src="./IMAGES/Tokyo, Japan.jpeg" alt="Tokyo">
+                </div>
+                <div class="card-content">
+                    <h3>Tokyo, Japan</h3>
+                    <p>A mix of ultramodern and traditional, from neon-lit skyscrapers to historic temples.</p>
+                    <div class="card-meta">
+                        <div class="price">Rs.425,177 Only</div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(312)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card 4 -->
+            <div class="destination-card fade-in" style="animation-delay: 0.4s;">
+                <div class="card-image">
+                    <img src="./IMAGES/New York, USA.jpeg" alt="New York">
+                    <div class="card-badge">Sale</div>
+                </div>
+                <div class="card-content">
+                    <h3>New York, USA</h3>
+                    <p>The city that never sleeps, featuring iconic landmarks like Times Square and Central Park.</p>
+                    <div class="card-meta">
+                        <div class="price">Rs.226,629 only</div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(421)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card 5 (New) -->
+            <div class="destination-card fade-in" style="animation-delay: 0.5s;">
+                <div class="card-image">
+                    <img src="./IMAGES/Santorini, Greece.jpg" alt="Santorini">
+                    <div class="card-badge">Popular</div>
+                </div>
+                <div class="card-content">
+                    <h3>Santorini, Greece</h3>
+                    <p>Famous for its white-washed buildings, blue domes, and stunning sunsets over the Aegean Sea.</p>
+                    <div class="card-meta">
+                        <div class="price">Rs.389,999 Only</div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(298)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card 6 (New) -->
+            <div class="destination-card fade-in" style="animation-delay: 0.6s;">
+                <div class="card-image">
+                    <img src="./IMAGES/Swiss Alps, Switzerland.jpg" alt="Switzerland">
+                    <div class="card-badge">Trending</div>
+                </div>
+                <div class="card-content">
+                    <h3>Swiss Alps, Switzerland</h3>
+                    <p>Breathtaking mountain scenery, charming villages, and world-class skiing destinations.</p>
+                    <div class="card-meta">
+                        <div class="price">Rs.512,450 Only</div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(347)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="booking-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Book Your Trip</h2>
+            </div>
+            <div class="booking-container">
+                <div class="booking-form slide-up">
+                    <h3>Personalize Your Travel Experience</h3>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first-name">First Name</label>
+                                <input type="text" id="first-name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" id="last-name" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="trip-date">Trip Date</label>
+                                <input type="text" id="trip-date" class="form-control datepicker" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="travelers">Travelers</label>
+                                <select id="travelers" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5+">5+</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="special-requests">Special Requests</label>
+                            <textarea id="special-requests" class="form-control" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Complete Booking</button>
+                    </form>
+                </div>
+                <div class="booking-image fade-in">
+                    <img src="https://images.unsplash.com/photo-1503220317375-aaad61436b1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Travel Experience">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="container">
+        <div class="section-title">
+            <h2>Explore Our Destinations</h2>
+        </div>
+        <div class="map-section">
+            <div class="map-overlay slide-up">
+                <h3>Find Your Next Adventure</h3>
+                <p>Browse our destinations on the map and discover amazing places to visit around the world.</p>
+                <div class="map-filter">
+                    <button class="active">All</button>
+                    <button>Beaches</button>
+                    <button>Mountains</button>
+                    <button>Cities</button>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d16573.045996878867!2d67.01718866362863!3d24.889129603072526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1756482812429!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Voyago</h3>
+                    <p>Making travel planning easy and enjoyable. Discover your perfect getaway with our curated experiences.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Destinations</a></li>
+                        <li><a href="#">Special Offers</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Booking Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Travel St, Adventure City</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@voyago.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Voyago. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+    
+    <script>
+        // Initialize date pickers
+        document.addEventListener('DOMContentLoaded', function() {
+            flatpickr(".datepicker", {
+                dateFormat: "M j, Y",
+                minDate: "today"
+            });
+
+            // Initialize price range slider if the element exists
+            const priceSliderContainer = document.querySelector('.form-group.full-width');
+            if (priceSliderContainer) {
+                const priceSlider = document.createElement('div');
+                priceSlider.id = 'price-slider';
+                priceSliderContainer.appendChild(priceSlider);
+                
+                noUiSlider.create(priceSlider, {
+                    start: [100, 1000],
+                    connect: true,
+                    range: {
+                        'min': 0,
+                        'max': 2000
+                    },
+                    step: 50,
+                    tooltips: true,
+                    format: {
+                        to: function(value) {
+                            return '$' + Math.round(value);
+                        },
+                        from: function(value) {
+                            return Number(value.replace('$', ''));
+                        }
+                    }
+                });
+            }
+        });
+
+        // Tab switching 
+        const tabs = document.querySelectorAll('.search-tab');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+            });
+        });
+
+        // Filter buttons 
+        const filterButtons = document.querySelectorAll('.map-filter button');
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+            });
+        });
+
+        // Animation on scroll
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.fade-in, .slide-up');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+                
+                if (elementPosition < screenPosition) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        };
+
+        window.addEventListener('scroll', animateOnScroll);
+        animateOnScroll(); // Run once on load
+    </script>
+</body>
+</html>
